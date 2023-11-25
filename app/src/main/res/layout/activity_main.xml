@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Proveedores"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearRutBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTitulo"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/edtRut"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="RUT"/>
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearRutBuscar"
+        android:layout_marginTop="8dp"
+        android:hint="Nombre"/>
+
+    <EditText
+        android:id="@+id/edtDireccion_calle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNombre"
+        android:layout_marginTop="8dp"
+        android:hint="Calle" />
+
+    <EditText
+        android:id="@+id/edtDireccion_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDireccion_calle"
+        android:layout_marginTop="8dp"
+        android:hint="Número"/>
+
+    <EditText
+        android:id="@+id/edtDireccion_comuna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDireccion_numero"
+        android:layout_marginTop="9dp"
+        android:hint="Comuna"/>
+
+    <EditText
+        android:id="@+id/edtDireccion_ciudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDireccion_comuna"
+        android:layout_marginTop="8dp"
+        android:hint="Ciudad"/>
+
+    <EditText
+        android:id="@+id/edtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDireccion_ciudad"
+        android:layout_marginTop="8dp"
+        android:hint="Teléfono"/>
+
+    <EditText
+        android:id="@+id/edtPagina_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTelefono"
+        android:layout_marginTop="7dp"
+        android:hint="Página web"/>
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:layout_below="@id/edtPagina_web"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:layout_below="@id/btnAgregar"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_below="@id/btnEditar"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>
